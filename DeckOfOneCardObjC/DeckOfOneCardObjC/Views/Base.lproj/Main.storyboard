@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Card Controller View Controller-->
+        <!--Card View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="BBCardControllerViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="BBCardViewController" customModule="DeckOfOneCardObjC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -34,7 +34,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="DrawNewButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s2n-Xf-8PU"/>
+                                    <action selector="drawNewCardButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j2p-0Y-5yt"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -50,8 +50,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="cardImageView" destination="cvp-aZ-NnC" id="kvS-Pb-Tfm"/>
-                        <outlet property="suitLabel" destination="rFu-nY-qB9" id="E3M-LG-0tL"/>
+                        <outlet property="cardImageView" destination="cvp-aZ-NnC" id="DGi-MD-FeU"/>
+                        <outlet property="cardSuitLabel" destination="rFu-nY-qB9" id="2FI-EJ-wxl"/>
+                        <outlet property="drawNewCardButton" destination="o2h-ec-8jh" id="87F-te-dae"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

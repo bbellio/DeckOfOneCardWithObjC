@@ -67,6 +67,7 @@ static NSString * const baseURLString = @"https://deckofcardsapi.com/api/deck/ne
                 return;
             }
             
+            // Parsing down more than one level like so
             NSArray * cardsArray = topLevelDictionary[@"cards"];
             NSMutableArray * cardPlaceholder = [NSMutableArray new];
             
@@ -102,3 +103,4 @@ static NSString * const baseURLString = @"https://deckofcardsapi.com/api/deck/ne
     }] resume];
 }
 @end
+
